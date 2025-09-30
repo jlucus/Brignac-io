@@ -7,6 +7,7 @@
     "start": "npx serve dist",
     "lint:css": "stylelint \"public/**/*.css\" --fix", 
     "clean": "rimraf dist build .next",
+    "clean:node": "rimraf dist build node_modules .next",
     "validate:html": "npx html-validate public/*.html public/pages/*.html",
     "validate:css": "npx stylelint public/**/*.css",
     "validate": "npm run validate:html && npm run validate:css",

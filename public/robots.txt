@@ -1,0 +1,53 @@
+# robots.txt for brignac.io
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://brignac.io/sitemap.xml
+
+# Block access to sensitive directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow access to CSS and JS files for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /images/
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block known bad bots (optional)
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: ScreamingFrogSEOSpider
+Disallow: /
+
+# Social media bots (allow for proper sharing)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /

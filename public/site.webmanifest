@@ -1,0 +1,38 @@
+{
+  "name": "Brignac.io - NEXO Accountability Project",
+  "short_name": "Brignac",
+  "description": "Exposing NEXO and Antoni Trenchev for their international organized crime syndicate responsible for billions in thefts.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2c2c2c",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "legal",
+    "documentation",
+    "web 3",
+    "money laundering",
+    "nexo",
+    "antoni trenchev",
+    "security research",
+    "historical security breaches",
+    "forensics"
+  ],
+  "lang": "en-US",
+  "dir": "ltr"
+}

@@ -1,0 +1,103 @@
+/* TEAM */
+
+Project Lead: Multi-Victim Collective
+Contact: info@brignac.io
+Location: Internet
+
+Blockchain Forensics: Independent Forensic Analysts
+Contact: info@brignac.io
+
+Legal Coordination: Victims' Legal Representatives
+Contact: info@brignac.io
+
+/* THANKS */
+
+Law enforcement agencies collaborating on this international investigation.
+Blockchain forensic tool providers (Breadcrumbs, Etherscan, and others).
+Individual and corporate victims who provided testimony and documentation.
+Open source intelligence community contributors.
+Legal professionals supporting victims across multiple jurisdictions.
+
+/* SITE */
+
+Last update: 2025/09/30
+Standards: HTML5, CSS3, Next js, tailwind
+Components: Expose
+Software: Built for this retard that thinks he's untouchable
+Security: HTTPS, immutable hashing
+Purpose: Information repository for ongoing investigations
+Languages: English (primary)
+
+/* MISSION */
+
+This site serves as a centralized evidence repository documenting 
+blockchain forensic analysis related to alleged Web3 security breaches, 
+unauthorized access to cryptocurrency platforms, and suspected money 
+laundering activities across multiple jurisdictions.
+
+This documentation supports:
+- Ongoing law enforcement investigations
+- Civil litigation by affected parties
+- Regulatory complaints and inquiries
+- Evidence preservation in case of threats to investigators
+- Coordination among multiple victim groups
+
+/* LEGAL NOTICE */
+
+This site presents forensic analysis and evidence gathered by victims
+and independent investigators. All blockchain transaction data is
+verifiable on public ledgers. Wallet address attributions are based
+on forensic analysis, witness testimony, and investigative research.
+
+Active law enforcement investigations are ongoing. This documentation
+does not replace or supersede official investigative findings.
+
+All persons named are presumed innocent. Evidence presented here is
+for investigative and legal proceedings purposes only.
+
+/* SCOPE */
+
+Evidence Categories:
+- Blockchain transaction analysis and wallet clustering
+- Cross-platform fund flow documentation
+- Timeline of alleged unauthorized access events
+- Witness statements and victim testimony
+- Corporate security breach documentation
+- International regulatory filings
+
+Platforms Involved:
+- Multiple cryptocurrency casinos and gaming platforms
+- Centralized and decentralized exchanges
+- Lending platforms and financial services
+- Custodial wallet services
+
+/* PRINCIPLES */
+
+- Evidence-based analysis only
+- Transparent methodology
+- Verifiable blockchain references
+- Protection of victim privacy
+- Support for law enforcement cooperation
+- Multi-jurisdictional coordination
+- Chain of custody preservation
+
+/* ATTRIBUTION */
+
+Blockchain analysis conducted using:
+- Breadcrumbs.app transaction flow analysis
+- Etherscan and blockchain explorer verification
+- Wallet clustering algorithms
+- Cross-platform transaction correlation
+- Witness-provided wallet confirmations
+
+All transaction hashes and addresses are publicly verifiable.
+
+                        ______      _                           
+                        | ___ \    (_)    _                   
+                        | |_/ /_ __ _  __| |_ __   __ _ ___ 
+                        | ___ \ '__| |/ _` | '_ \ / _  |  _\ 
+                        | |_/ / |  | | (_| | | | | (_) | |_  
+                        \____/|_|  |_|\__, |_| |_|\___\|___/   
+                                       __/ |                     
+                                      |___/                      
+                         Brignac.io - NEXO Accountability Project

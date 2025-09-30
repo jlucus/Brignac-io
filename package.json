@@ -1,0 +1,117 @@
+{
+  "name": "brignacio",
+  "version": "1.0.0",
+  "description": "NEXO Accountability Project.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve dist",
+    "lint:css": "stylelint \"public/**/*.css\" --fix", 
+    "clean": "rimraf dist build .next",
+    "validate:html": "npx html-validate public/*.html public/pages/*.html",
+    "validate:css": "npx stylelint public/**/*.css",
+    "validate": "npm run validate:html && npm run validate:css",
+    "copy:html": "node -e \"require('fs').mkdirSync('dist',{recursive:true});\" && cp public/*.html dist/ && cp -r public/pages dist/pages/",
+    "copy:assets": "cpx \"public/assets/**/*\" dist/assets",
+    "copy:static": "cp public/sitemap.xml public/robots.txt public/site.webmanifest dist/",
+    "copy": "npm run copy:html && npm run copy:css && npm run copy:assets && npm run copy:static",
+    "copy:css": "node -e \"require('fs').mkdirSync('dist',{recursive:true});\" && cp public/global.css dist/",
+    "build:css": "npx postcss public/global.css -o dist/global.css",
+    "optimize:images": "node -e \"require('fs').mkdirSync('dist/assets/images',{recursive:true});\" && npx imagemin public/assets/images/* --out-dir=dist/assets/images/",
+    "minify": "npx html-minifier-terser --input-dir dist --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-css --minify-js",
+    "optimize": "npm run optimize:images && npm run minify",
+    "build": "npm run clean && npm run validate && npm run copy && npm run build:css && npm run optimize",
+    "dev": "npx browser-sync start --server 'dist' --files 'dist/*.html, dist/*.css, dist/*.js'",
+    "lighthouse": "npx lighthouse https://brignac.io --output html --output-path ./lighthouse-report.html",
+    "test:accessibility": "npx axe-core public/*.html",
+    "serve": "python -m http.server 8000 --directory dist",
+    "deploy": "npm run build && rsync -avz --delete dist/ user@server:/var/www/html/"
+  },
+  "keywords": [
+    "legal",
+    "documentation",
+    "web 3",
+    "money laundering",
+    "nexo exchange",
+    "antoni trenchev",
+    "security research",
+    "historical security breaches",
+    "forensics",
+    "hacking"
+  ],
+  "author": {
+    "name": "Brignac.io - NEXO Accountability Project",
+    "email": "info@brignac.io",
+    "url": "https://brignac.io"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://brignac.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlucus/Brignacio/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlucus/Brignacio/website/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "devDependencies": {
+    "@axe-core/cli": "^4.8.0",
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^2.29.0",
+    "cpx": "^1.5.0",
+    "html-minifier-terser": "^7.2.0",
+    "html-validate": "^8.7.0",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "lighthouse": "^11.0.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "rimraf": "^6.0.1",
+    "serve": "^14.2.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-tailwindcss": "^1.0.0",
+    "tailwindcss": "^4.1.13"
+  },
+  "config": {
+    "port": 8000,
+    "host": "localhost"
+  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://brignac.io"
+    },
+    {
+      "type": "foundation",
+      "url": "https://brignac.io"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Community Contributors",
+      "url": "https://github.com/jlucus/Brignacio/website/graphs/contributors"
+    }
+  ],
+  "files": [
+    "index.html",
+    "global.css",
+    "pages/",
+    "assets/",
+    "sitemap.xml",
+    "robots.txt",
+    "site.webmanifest",
+    "humans.txt",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-512.png"
+  ]
+}

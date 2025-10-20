@@ -1,4 +1,4 @@
-# .htaccess for formerlyincarcerated.org
+# .htaccess for brignac.io
 
 # Enable HTTPS redirect
 RewriteEngine On
@@ -114,5 +114,5 @@ RewriteRule ^index/?$ / [R=301,L]
 
 # Prevent image hotlinking
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^https?://(www\.)?formerlyincarcerated\.org [NC]
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?brignac\.io [NC]
 RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,L]

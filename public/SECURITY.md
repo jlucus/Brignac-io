@@ -1,12 +1,7 @@
-# Security Policy for formerlyincarcerated.org
+# Security Policy
 # https://securitytxt.org/
 
-Contact: mailto:security@formerlyincarcerated.org
-Contact: https://formerlyincarcerated.org/security
-Expires: 2025-12-31T23:59:59.000Z
-Encryption: https://formerlyincarcerated.org/pgp-key.txt
-Preferred-Languages: en
-Canonical: https://formerlyincarcerated.org/.well-known/security.txt
+
 
 # Vulnerability Disclosure Policy
 # We take security seriously. If you discover a security vulnerability,
@@ -29,12 +24,10 @@ Canonical: https://formerlyincarcerated.org/.well-known/security.txt
 # - Resolution: We aim to fix critical issues within 7 days
 
 # Scope:
-# In scope: formerlyincarcerated.org and all subdomains
+# In scope: all subdomains
 # Out of scope: Physical security, social engineering, DoS attacks
 
 # Recognition:
 # We maintain a security researchers hall of fame for responsible disclosures.
 
 # Additional security resources:
-Policy: https://formerlyincarcerated.org/security-policy
-Acknowledgments: https://formerlyincarcerated.org/security-acknowledgments
